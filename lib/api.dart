@@ -72,6 +72,7 @@ class _MyAppState extends State<MyApi> {
                       ),
                     );
                   }else
+                  
                   return ListView.builder(
                     itemCount:  data.length,
                     itemBuilder: (context,i){
@@ -84,7 +85,7 @@ class _MyAppState extends State<MyApi> {
                                   child: Column(
                                     children: [
                                       SizedBox(height: 20),
-                              Text(data[i].name == null
+                              Text(data[i]['name'] == null
                                   ? "User is not present."
                                   : data[i]['name']),
                               SizedBox(height: 10),
